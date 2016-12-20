@@ -4,9 +4,16 @@ alfred can help you manage your supervisor processes
 
 ![](http://i.imgur.com/QpJYoQ3.png)
 
-###[Download Here](https://github.com/mobilizeio/env/raw/master/Supervisor.alfredworkflow)
 
-Download the workflow and add it to alfred
+After installing supervisor, create a link to the path - write in terminal:
+```
+ln -s "/usr/local/bin/supervisorctl" `which supervisorctl`
+```
+
+run ` /usr/local/bin/supervisorctl --help` and see if it returnes help message.
+if it does, the alfred workflow can run!
+
+[Download](https://github.com/mobilizeio/env/raw/master/Supervisor.alfredworkflow) the workflow and add it to alfred
 to configure the workflow, open alfred box and type `confenv`
 
 ![](http://i.imgur.com/lefnDQO.png)
