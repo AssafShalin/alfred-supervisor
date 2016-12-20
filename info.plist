@@ -312,6 +312,30 @@ ruby "$SCRIPT_PATH"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>git reset --hard
+git pull</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -334,30 +358,6 @@ ruby "$SCRIPT_PATH"</string>
 			<string>7FE46997-9516-4666-88CF-CBBDE39CF4B8</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>git reset --hard
-git pull</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -452,9 +452,9 @@ pkill -f supervisord</string>
 		<key>60F87388-AF2B-401E-8408-11C9298B2A09</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1320</integer>
+			<integer>1420</integer>
 			<key>ypos</key>
-			<integer>320</integer>
+			<integer>240</integer>
 		</dict>
 		<key>62092417-8D51-4E9D-8E23-8D9B57D7748C</key>
 		<dict>
@@ -536,9 +536,9 @@ pkill -f supervisord</string>
 		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1140</integer>
+			<integer>1240</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>210</integer>
 		</dict>
 	</dict>
 	<key>version</key>
