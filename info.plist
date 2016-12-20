@@ -6,6 +6,19 @@
 	<string>com.assafdev.superv</string>
 	<key>connections</key>
 	<dict>
+		<key>62092417-8D51-4E9D-8E23-8D9B57D7748C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>6992690F-8E23-4CE1-AFD2-74C4A1113E41</key>
 		<array>
 			<dict>
@@ -45,6 +58,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9A42243F-6083-4114-AA05-1CC37D1205E5</key>
 		<array>
 			<dict>
@@ -76,6 +102,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>749C095F-4B17-4AEC-B023-9AAEACC16695</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>60F87388-AF2B-401E-8408-11C9298B2A09</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -218,6 +257,47 @@ ruby "$SCRIPT_PATH"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>git reset --hard
+git pull</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {allvars}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>60F87388-AF2B-401E-8408-11C9298B2A09</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>cd "$REPOSITORY_PATH"
 /usr/local/bin/supervisorctl stop all
 pkill -f supervisord</string>
@@ -282,6 +362,13 @@ pkill -f supervisord</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>60F87388-AF2B-401E-8408-11C9298B2A09</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1410</integer>
+			<key>ypos</key>
+			<integer>320</integer>
+		</dict>
 		<key>62092417-8D51-4E9D-8E23-8D9B57D7748C</key>
 		<dict>
 			<key>xpos</key>
@@ -337,6 +424,13 @@ pkill -f supervisord</string>
 			<integer>590</integer>
 			<key>ypos</key>
 			<integer>210</integer>
+		</dict>
+		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1230</integer>
+			<key>ypos</key>
+			<integer>290</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
