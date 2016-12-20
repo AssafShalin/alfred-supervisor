@@ -516,21 +516,21 @@ pkill -f supervisord</string>
 			<key>xpos</key>
 			<integer>910</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>360</integer>
 		</dict>
 		<key>9A42243F-6083-4114-AA05-1CC37D1205E5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>330</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>360</integer>
 		</dict>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<dict>
 			<key>xpos</key>
 			<integer>590</integer>
 			<key>ypos</key>
-			<integer>380</integer>
+			<integer>360</integer>
 		</dict>
 		<key>C61DC08A-3BCA-472C-AF29-4CDDAE66E0C7</key>
 		<dict>

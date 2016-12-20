@@ -1,13 +1,11 @@
 #Supervisor Alfred Integration
 
-alfred can help you manage your process
+alfred can help you manage your supervisor processes
 
 ![](http://i.imgur.com/QpJYoQ3.png)
 
-you can manage the entire work flow using `alfred`
-
-after adding the alfred workflow (workflow will be given via slack), you're going to have to define the repository directory
-to do so, open alfred box and type `confenv`
+after adding the alfred workflow
+to configure the workflow, open alfred box and type `confenv`
 
 ![](http://i.imgur.com/lefnDQO.png)
 
