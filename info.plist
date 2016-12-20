@@ -62,7 +62,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
+				<string>CAB2DC79-0B86-449F-AED9-9D2917AFB57C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -123,6 +123,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CAB2DC79-0B86-449F-AED9-9D2917AFB57C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
 		<array>
 			<dict>
@@ -147,6 +160,29 @@
 	<string>Supervisor</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cp -n ./config.example.sh ./config.sh</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>CAB2DC79-0B86-449F-AED9-9D2917AFB57C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -416,14 +452,14 @@ pkill -f supervisord</string>
 		<key>60F87388-AF2B-401E-8408-11C9298B2A09</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1410</integer>
+			<integer>1320</integer>
 			<key>ypos</key>
 			<integer>320</integer>
 		</dict>
 		<key>62092417-8D51-4E9D-8E23-8D9B57D7748C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1000</integer>
+			<integer>910</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -437,21 +473,21 @@ pkill -f supervisord</string>
 		<key>749C095F-4B17-4AEC-B023-9AAEACC16695</key>
 		<dict>
 			<key>xpos</key>
-			<integer>770</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
 		<key>7A18DA1C-6589-40E5-B15F-7B9D6252752B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>910</integer>
 			<key>ypos</key>
 			<integer>70</integer>
 		</dict>
 		<key>7FE46997-9516-4666-88CF-CBBDE39CF4B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>830</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -465,7 +501,7 @@ pkill -f supervisord</string>
 		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1000</integer>
+			<integer>910</integer>
 			<key>ypos</key>
 			<integer>380</integer>
 		</dict>
@@ -490,10 +526,17 @@ pkill -f supervisord</string>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
+		<key>CAB2DC79-0B86-449F-AED9-9D2917AFB57C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
 		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1230</integer>
+			<integer>1140</integer>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
