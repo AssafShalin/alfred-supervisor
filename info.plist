@@ -58,6 +58,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>89120510-2E0D-46CB-82E5-5A713EA74DC5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
 		<array>
 			<dict>
@@ -137,26 +150,38 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$REPOSITORY_PATH"
-{query}</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>openwith</key>
+				<string>/Applications/TextEdit.app</string>
+				<key>sourcefile</key>
+				<string>config.sh</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>C61DC08A-3BCA-472C-AF29-4CDDAE66E0C7</string>
+			<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>confenv</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Configurate env workflow</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>89120510-2E0D-46CB-82E5-5A713EA74DC5</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -178,6 +203,31 @@
 			<string>62092417-8D51-4E9D-8E23-8D9B57D7748C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>source ./config.sh
+cd "$REPOSITORY_PATH"
+{query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C61DC08A-3BCA-472C-AF29-4CDDAE66E0C7</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -227,12 +277,12 @@ ruby "$SCRIPT_PATH"</string>
 			<key>config</key>
 			<dict>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>7FE46997-9516-4666-88CF-CBBDE39CF4B8</string>
+			<string>749C095F-4B17-4AEC-B023-9AAEACC16695</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -240,12 +290,12 @@ ruby "$SCRIPT_PATH"</string>
 			<key>config</key>
 			<dict>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>3</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>749C095F-4B17-4AEC-B023-9AAEACC16695</string>
+			<string>7FE46997-9516-4666-88CF-CBBDE39CF4B8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -293,31 +343,6 @@ git pull</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd "$REPOSITORY_PATH"
-/usr/local/bin/supervisorctl stop all
-pkill -f supervisord</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -335,6 +360,32 @@ pkill -f supervisord</string>
 			<string>9A42243F-6083-4114-AA05-1CC37D1205E5</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>source ./cofing.sh
+cd "$REPOSITORY_PATH"
+/usr/local/bin/supervisorctl stop all
+pkill -f supervisord</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -390,12 +441,26 @@ pkill -f supervisord</string>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
+		<key>7A18DA1C-6589-40E5-B15F-7B9D6252752B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>70</integer>
+		</dict>
 		<key>7FE46997-9516-4666-88CF-CBBDE39CF4B8</key>
 		<dict>
 			<key>xpos</key>
 			<integer>870</integer>
 			<key>ypos</key>
 			<integer>240</integer>
+		</dict>
+		<key>89120510-2E0D-46CB-82E5-5A713EA74DC5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>70</integer>
 		</dict>
 		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
 		<dict>
@@ -432,11 +497,6 @@ pkill -f supervisord</string>
 			<key>ypos</key>
 			<integer>290</integer>
 		</dict>
-	</dict>
-	<key>variables</key>
-	<dict>
-		<key>REPOSITORY_PATH</key>
-		<string>/Users/assaf/repos/web-app</string>
 	</dict>
 	<key>version</key>
 	<string>1.0.0</string>
