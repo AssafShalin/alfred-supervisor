@@ -110,6 +110,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B0BC3462-6D30-4937-98D8-DA288D56C031</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8A501075-0962-4C8E-874D-6DB6C5381B69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<array>
 			<dict>
@@ -457,6 +470,65 @@ pkill -f supervisord</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>envlog</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>cat supervisord.conf | grep stdout_logfile | sed s/stdout_logfile=//g | sed s/%\(ENV_REPO_PATH\)s//g</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>./get_logs.sh</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B0BC3462-6D30-4937-98D8-DA288D56C031</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>source ./config.sh
+tail -f $REPOSITORY_PATH/{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>8A501075-0962-4C8E-874D-6DB6C5381B69</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -511,6 +583,13 @@ pkill -f supervisord</string>
 			<key>ypos</key>
 			<integer>70</integer>
 		</dict>
+		<key>8A501075-0962-4C8E-874D-6DB6C5381B69</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>540</integer>
+		</dict>
 		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
 		<dict>
 			<key>xpos</key>
@@ -524,6 +603,13 @@ pkill -f supervisord</string>
 			<integer>330</integer>
 			<key>ypos</key>
 			<integer>360</integer>
+		</dict>
+		<key>B0BC3462-6D30-4937-98D8-DA288D56C031</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>540</integer>
 		</dict>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<dict>
