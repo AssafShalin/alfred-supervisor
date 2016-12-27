@@ -28,7 +28,7 @@ ARGF.each do |line|
     		:title => line,
     		:subtitle => "Open " + line.strip + " log file",
     		:icon => "logicon.png",
-    		:arg => line
+    		:arg => line.strip
     	})
 end
 
