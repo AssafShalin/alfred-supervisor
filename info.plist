@@ -519,8 +519,7 @@ pkill -f supervisord</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>source ./config.sh
-tail -f $REPOSITORY_PATH/{query}</string>
+				<string>tail -f {query}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
