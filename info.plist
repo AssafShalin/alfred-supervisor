@@ -498,9 +498,9 @@ pkill -f supervisord</string>
 				<key>scriptfile</key>
 				<string>./get_logs.sh</string>
 				<key>subtext</key>
-				<string></string>
+				<string>Will open a log file for a running process</string>
 				<key>title</key>
-				<string></string>
+				<string>Running processes logs</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
