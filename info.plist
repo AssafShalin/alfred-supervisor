@@ -114,7 +114,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8A501075-0962-4C8E-874D-6DB6C5381B69</string>
+				<string>625CC436-74F3-429E-A2D6-60F05B3B7867</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -213,7 +213,7 @@
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>/Applications/TextEdit.app</string>
+				<string></string>
 				<key>sourcefile</key>
 				<string>config.sh</string>
 			</dict>
@@ -405,6 +405,27 @@ git pull</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Supervisor and its subprocesses are now stopped</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -452,21 +473,24 @@ pkill -f supervisord</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Terminal"
+    activate
+    tell application "System Events" to keystroke "t" using command down
+    repeat while contents of selected tab of window 1 starts with linefeed
+        delay 0.01
+    end repeat
+    do script "tail -f " &amp; q in window 1
+end tell
+end alfred_script</string>
+				<key>cachescript</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Supervisor and its subprocesses are now stopped</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
-			<string>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</string>
+			<string>625CC436-74F3-429E-A2D6-60F05B3B7867</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -474,7 +498,7 @@ pkill -f supervisord</string>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
-				<false/>
+				<true/>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -513,21 +537,6 @@ pkill -f supervisord</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>tail -f {query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>8A501075-0962-4C8E-874D-6DB6C5381B69</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -546,6 +555,13 @@ pkill -f supervisord</string>
 			<integer>910</integer>
 			<key>ypos</key>
 			<integer>210</integer>
+		</dict>
+		<key>625CC436-74F3-429E-A2D6-60F05B3B7867</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>540</integer>
 		</dict>
 		<key>6992690F-8E23-4CE1-AFD2-74C4A1113E41</key>
 		<dict>
@@ -582,19 +598,12 @@ pkill -f supervisord</string>
 			<key>ypos</key>
 			<integer>70</integer>
 		</dict>
-		<key>8A501075-0962-4C8E-874D-6DB6C5381B69</key>
-		<dict>
-			<key>xpos</key>
-			<integer>590</integer>
-			<key>ypos</key>
-			<integer>540</integer>
-		</dict>
 		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>910</integer>
+			<integer>920</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>350</integer>
 		</dict>
 		<key>9A42243F-6083-4114-AA05-1CC37D1205E5</key>
 		<dict>
