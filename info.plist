@@ -6,6 +6,19 @@
 	<string>com.assafdev.superv</string>
 	<key>connections</key>
 	<dict>
+		<key>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>538679AC-9333-4C2B-901D-3D3A2D0BF83C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>62092417-8D51-4E9D-8E23-8D9B57D7748C</key>
 		<array>
 			<dict>
@@ -28,6 +41,16 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF630948-4CCB-4567-8760-26CC9CDC2BBC</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Show log</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -154,6 +177,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CF630948-4CCB-4567-8760-26CC9CDC2BBC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -405,6 +441,55 @@ git pull</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>538679AC-9333-4C2B-901D-3D3A2D0BF83C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>start</string>
+				<key>replacestring</key>
+				<string>tail -f</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>CF630948-4CCB-4567-8760-26CC9CDC2BBC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>stop</string>
+				<key>replacestring</key>
+				<string>tail -f</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -542,6 +627,20 @@ end alfred_script</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>538679AC-9333-4C2B-901D-3D3A2D0BF83C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>910</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
+		<key>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
 		<key>60F87388-AF2B-401E-8408-11C9298B2A09</key>
 		<dict>
 			<key>xpos</key>
@@ -559,9 +658,9 @@ end alfred_script</string>
 		<key>625CC436-74F3-429E-A2D6-60F05B3B7867</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>580</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>660</integer>
 		</dict>
 		<key>6992690F-8E23-4CE1-AFD2-74C4A1113E41</key>
 		<dict>
@@ -601,30 +700,30 @@ end alfred_script</string>
 		<key>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>920</integer>
+			<integer>910</integer>
 			<key>ypos</key>
-			<integer>350</integer>
+			<integer>470</integer>
 		</dict>
 		<key>9A42243F-6083-4114-AA05-1CC37D1205E5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>320</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>480</integer>
 		</dict>
 		<key>B0BC3462-6D30-4937-98D8-DA288D56C031</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>540</integer>
+			<integer>660</integer>
 		</dict>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>580</integer>
 			<key>ypos</key>
-			<integer>360</integer>
+			<integer>480</integer>
 		</dict>
 		<key>C61DC08A-3BCA-472C-AF29-4CDDAE66E0C7</key>
 		<dict>
@@ -639,6 +738,13 @@ end alfred_script</string>
 			<integer>590</integer>
 			<key>ypos</key>
 			<integer>70</integer>
+		</dict>
+		<key>CF630948-4CCB-4567-8760-26CC9CDC2BBC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>520</integer>
+			<key>ypos</key>
+			<integer>370</integer>
 		</dict>
 		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
 		<dict>
