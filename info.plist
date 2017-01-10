@@ -133,19 +133,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B0BC3462-6D30-4937-98D8-DA288D56C031</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>625CC436-74F3-429E-A2D6-60F05B3B7867</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<array>
 			<dict>
@@ -490,27 +477,6 @@ git pull</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string></string>
-				<key>title</key>
-				<string>Supervisor and its subprocesses are now stopped</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -526,6 +492,27 @@ git pull</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>9A42243F-6083-4114-AA05-1CC37D1205E5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>Supervisor and its subprocesses are now stopped</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -552,73 +539,6 @@ pkill -f supervisord</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-tell application "Terminal"
-    activate
-    tell application "System Events" to keystroke "t" using command down
-    repeat while contents of selected tab of window 1 starts with linefeed
-        delay 0.01
-    end repeat
-    do script "tail -f " &amp; q in window 1
-end tell
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>625CC436-74F3-429E-A2D6-60F05B3B7867</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>envlog</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>cat supervisord.conf | grep stdout_logfile | sed s/stdout_logfile=//g | sed s/%\(ENV_REPO_PATH\)s//g</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>./get_logs.sh</string>
-				<key>subtext</key>
-				<string>Will open a log file for a running process</string>
-				<key>title</key>
-				<string>Running processes logs</string>
-				<key>type</key>
-				<integer>8</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>B0BC3462-6D30-4937-98D8-DA288D56C031</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -654,13 +574,6 @@ end alfred_script</string>
 			<integer>910</integer>
 			<key>ypos</key>
 			<integer>210</integer>
-		</dict>
-		<key>625CC436-74F3-429E-A2D6-60F05B3B7867</key>
-		<dict>
-			<key>xpos</key>
-			<integer>580</integer>
-			<key>ypos</key>
-			<integer>660</integer>
 		</dict>
 		<key>6992690F-8E23-4CE1-AFD2-74C4A1113E41</key>
 		<dict>
@@ -702,7 +615,7 @@ end alfred_script</string>
 			<key>xpos</key>
 			<integer>910</integer>
 			<key>ypos</key>
-			<integer>470</integer>
+			<integer>480</integer>
 		</dict>
 		<key>9A42243F-6083-4114-AA05-1CC37D1205E5</key>
 		<dict>
@@ -710,13 +623,6 @@ end alfred_script</string>
 			<integer>320</integer>
 			<key>ypos</key>
 			<integer>480</integer>
-		</dict>
-		<key>B0BC3462-6D30-4937-98D8-DA288D56C031</key>
-		<dict>
-			<key>xpos</key>
-			<integer>310</integer>
-			<key>ypos</key>
-			<integer>660</integer>
 		</dict>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<dict>
