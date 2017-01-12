@@ -398,8 +398,8 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>#git reset --hard
-#git pull</string>
+				<string>git reset --hard
+git pull</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
