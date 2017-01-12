@@ -6,6 +6,45 @@
 	<string>com.assafdev.superv</string>
 	<key>connections</key>
 	<dict>
+		<key>0FE99864-90EF-478A-85E0-93B0307826D8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DFF27DCF-0674-41DD-AC2E-BB40D74E56CB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>21766916-FC57-4D45-BF9A-0B1D5051C872</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>72FD0546-5D18-4650-89E9-95F72D9EF494</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3C11EC4C-7F87-4254-B9D6-E4FFD4FAFACD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E65B12F9-3596-446A-BEAA-616033F4B7D5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</key>
 		<array>
 			<dict>
@@ -46,11 +85,34 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>CF630948-4CCB-4567-8760-26CC9CDC2BBC</string>
+				<string>21766916-FC57-4D45-BF9A-0B1D5051C872</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
+				<string>Restart Service</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>CF630948-4CCB-4567-8760-26CC9CDC2BBC</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
 				<string>Show log</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>72FD0546-5D18-4650-89E9-95F72D9EF494</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3C11EC4C-7F87-4254-B9D6-E4FFD4FAFACD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -185,6 +247,45 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D9499C43-7A1F-4D82-8EC8-A5152844F044</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DFF27DCF-0674-41DD-AC2E-BB40D74E56CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9499C43-7A1F-4D82-8EC8-A5152844F044</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E65B12F9-3596-446A-BEAA-616033F4B7D5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0FE99864-90EF-478A-85E0-93B0307826D8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
 		<array>
 			<dict>
@@ -235,21 +336,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>openwith</key>
-				<string></string>
-				<key>sourcefile</key>
-				<string>config.sh</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openfile</string>
-			<key>uid</key>
-			<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -267,6 +353,21 @@
 			<string>89120510-2E0D-46CB-82E5-5A713EA74DC5</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>config.sh</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>7A18DA1C-6589-40E5-B15F-7B9D6252752B</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -297,6 +398,30 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>#git reset --hard
+#git pull</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>source ./config.sh
 cd "$REPOSITORY_PATH"
 {query}</string>
@@ -313,6 +438,49 @@ cd "$REPOSITORY_PATH"
 			<string>C61DC08A-3BCA-472C-AF29-4CDDAE66E0C7</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>7FE46997-9516-4666-88CF-CBBDE39CF4B8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>749C095F-4B17-4AEC-B023-9AAEACC16695</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {allvars}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>60F87388-AF2B-401E-8408-11C9298B2A09</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -361,15 +529,37 @@ ruby "$SCRIPT_PATH"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string></string>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D9499C43-7A1F-4D82-8EC8-A5152844F044</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>git reset --hard
-git pull</string>
+				<string>source ./config.sh
+cd "$REPOSITORY_PATH"
+{query}</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -378,20 +568,24 @@ git pull</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</string>
+			<string>3C11EC4C-7F87-4254-B9D6-E4FFD4FAFACD</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>type</key>
+				<key>matchmode</key>
 				<integer>0</integer>
+				<key>matchstring</key>
+				<string>start</string>
+				<key>replacestring</key>
+				<string>restart</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.transform</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>749C095F-4B17-4AEC-B023-9AAEACC16695</string>
+			<string>21766916-FC57-4D45-BF9A-0B1D5051C872</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -404,24 +598,54 @@ git pull</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
-			<string>7FE46997-9516-4666-88CF-CBBDE39CF4B8</string>
+			<string>DFF27DCF-0674-41DD-AC2E-BB40D74E56CB</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string>'{query}', {allvars}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>stopped</string>
+				<key>replacestring</key>
+				<string>restarted</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>60F87388-AF2B-401E-8408-11C9298B2A09</string>
+			<string>E65B12F9-3596-446A-BEAA-616033F4B7D5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>stop</string>
+				<key>replacestring</key>
+				<string>restart</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>72FD0546-5D18-4650-89E9-95F72D9EF494</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>0FE99864-90EF-478A-85E0-93B0307826D8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -446,23 +670,6 @@ git pull</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
-				<string>start</string>
-				<key>replacestring</key>
-				<string>tail -f</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>CF630948-4CCB-4567-8760-26CC9CDC2BBC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
 				<string>stop</string>
 				<key>replacestring</key>
 				<string>tail -f</string>
@@ -477,21 +684,17 @@ git pull</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>envkill</string>
-				<key>subtext</key>
-				<string>Kill development enviorment</string>
-				<key>text</key>
-				<string>Kill Development Enviorment</string>
-				<key>withspace</key>
-				<false/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>start</string>
+				<key>replacestring</key>
+				<string>tail -f</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>9A42243F-6083-4114-AA05-1CC37D1205E5</string>
+			<string>CF630948-4CCB-4567-8760-26CC9CDC2BBC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -513,6 +716,27 @@ git pull</string>
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>990D3DF3-E50C-4669-9ED3-B238FDEF7CAD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>envkill</string>
+				<key>subtext</key>
+				<string>Kill development enviorment</string>
+				<key>text</key>
+				<string>Kill Development Enviorment</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9A42243F-6083-4114-AA05-1CC37D1205E5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -547,19 +771,40 @@ pkill -f supervisord</string>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>538679AC-9333-4C2B-901D-3D3A2D0BF83C</key>
+		<key>0FE99864-90EF-478A-85E0-93B0307826D8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>910</integer>
+			<integer>800</integer>
 			<key>ypos</key>
-			<integer>340</integer>
+			<integer>380</integer>
 		</dict>
-		<key>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</key>
+		<key>21766916-FC57-4D45-BF9A-0B1D5051C872</key>
+		<dict>
+			<key>xpos</key>
+			<integer>500</integer>
+			<key>ypos</key>
+			<integer>380</integer>
+		</dict>
+		<key>3C11EC4C-7F87-4254-B9D6-E4FFD4FAFACD</key>
 		<dict>
 			<key>xpos</key>
 			<integer>590</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>350</integer>
+		</dict>
+		<key>538679AC-9333-4C2B-901D-3D3A2D0BF83C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>590</integer>
+			<key>ypos</key>
+			<integer>490</integer>
+		</dict>
+		<key>5D4D0BCA-25BE-4670-AAB6-20CB40A9756B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>540</integer>
+			<key>ypos</key>
+			<integer>520</integer>
 		</dict>
 		<key>60F87388-AF2B-401E-8408-11C9298B2A09</key>
 		<dict>
@@ -571,21 +816,28 @@ pkill -f supervisord</string>
 		<key>62092417-8D51-4E9D-8E23-8D9B57D7748C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>910</integer>
+			<integer>930</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
 		<key>6992690F-8E23-4CE1-AFD2-74C4A1113E41</key>
 		<dict>
 			<key>xpos</key>
-			<integer>330</integer>
+			<integer>220</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>340</integer>
+		</dict>
+		<key>72FD0546-5D18-4650-89E9-95F72D9EF494</key>
+		<dict>
+			<key>xpos</key>
+			<integer>540</integer>
+			<key>ypos</key>
+			<integer>380</integer>
 		</dict>
 		<key>749C095F-4B17-4AEC-B023-9AAEACC16695</key>
 		<dict>
 			<key>xpos</key>
-			<integer>740</integer>
+			<integer>750</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -599,7 +851,7 @@ pkill -f supervisord</string>
 		<key>7FE46997-9516-4666-88CF-CBBDE39CF4B8</key>
 		<dict>
 			<key>xpos</key>
-			<integer>830</integer>
+			<integer>840</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -615,21 +867,21 @@ pkill -f supervisord</string>
 			<key>xpos</key>
 			<integer>910</integer>
 			<key>ypos</key>
-			<integer>480</integer>
+			<integer>630</integer>
 		</dict>
 		<key>9A42243F-6083-4114-AA05-1CC37D1205E5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>330</integer>
 			<key>ypos</key>
-			<integer>480</integer>
+			<integer>630</integer>
 		</dict>
 		<key>B6DA3E2B-EDDF-4B9E-9F02-CB8F31AB59C4</key>
 		<dict>
 			<key>xpos</key>
 			<integer>580</integer>
 			<key>ypos</key>
-			<integer>480</integer>
+			<integer>630</integer>
 		</dict>
 		<key>C61DC08A-3BCA-472C-AF29-4CDDAE66E0C7</key>
 		<dict>
@@ -648,9 +900,30 @@ pkill -f supervisord</string>
 		<key>CF630948-4CCB-4567-8760-26CC9CDC2BBC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>520</integer>
+			<integer>500</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>520</integer>
+		</dict>
+		<key>D9499C43-7A1F-4D82-8EC8-A5152844F044</key>
+		<dict>
+			<key>xpos</key>
+			<integer>930</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
+		<key>DFF27DCF-0674-41DD-AC2E-BB40D74E56CB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>870</integer>
+			<key>ypos</key>
+			<integer>380</integer>
+		</dict>
+		<key>E65B12F9-3596-446A-BEAA-616033F4B7D5</key>
+		<dict>
+			<key>xpos</key>
+			<integer>730</integer>
+			<key>ypos</key>
+			<integer>380</integer>
 		</dict>
 		<key>F5DE55FB-77C1-49B9-9A08-C092A352F0C6</key>
 		<dict>
