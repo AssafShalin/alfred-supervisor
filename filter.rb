@@ -25,7 +25,7 @@ if `/usr/local/bin/supervisorctl -u superv -p 12345678 status`.start_with?('http
 	processes << {
 		:title => 'Start Supervisord',
 		:subtitle => 'Start Monitoring process',
-		:arg => './script/superv.sh',
+		:arg => './scripts/superv.sh',
 		:icon => 'stopped.png'
 	}
 	print_alfred_template processes
@@ -41,7 +41,7 @@ end
 	command = '/usr/local/bin/supervisorctl -u superv -p 12345678 ' + cmd + ' ' + name
 
 	processes << {
-		:title => name.capitalize,
+		:title => name.split('-').join(' ').capitalize,
 		:subtitle => status.capitalize,
 		:arg => command,
 		:icon => icon
